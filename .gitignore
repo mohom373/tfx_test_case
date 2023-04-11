@@ -1,2 +1,4 @@
 azure_blob_storage_test/
 *.tfrecord
+tfx/
+data/
