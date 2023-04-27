@@ -1,9 +1,9 @@
 import csv
 
-input_file = 'penguin-data/full-set/data-full.csv'
+input_file = 'penguin-data/processed/data-processed.csv'
 output_file = 'penguin-data/incomplete-set/data-incomplete.csv'
 column_index = 0  # Change this to the index of the column you want to check
-string_to_match = 'Chinstrap'
+string_to_match = '1'
 max_count = 50  # Change this to the number of rows you want to remove
 
 with open(input_file, 'r', newline='') as infile, open(output_file, 'w', newline='') as outfile:
