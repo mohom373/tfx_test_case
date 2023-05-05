@@ -36,8 +36,12 @@ imagelab.find_issues(issue_types=issue_types)
 
 
 dark_images = imagelab.issues[imagelab.issues["is_dark_issue"] == True].sort_values(by=['dark_score'])
+
+# Get a list of paths for the darkened images as a list
 dark_image_files = dark_images.index.tolist()
 
+# Count the files of darkned images before and after
+# The second count should be (total amount of images - deleted darkned images)
 count_files('darkened_images')
 
 remove_images(dark_image_files)
